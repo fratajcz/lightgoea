@@ -1,4 +1,7 @@
 # LightGOEA
+
+The Code is from https://github.com/atarashansky/LightGOEA and I just re-touched it and got it up to date with modern numpy versions.
+
 A light-weight python function for performing GO term enrichment analysis
 
 # Documentation
