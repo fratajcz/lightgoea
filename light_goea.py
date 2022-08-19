@@ -82,8 +82,6 @@ def GOEA(target_genes,GENE_SETS,df_key='GO',goterms=None,fdr_thresh=0.25,p_thres
     counter=0
     # for each go term,
     for goterm in goterms:
-        if counter%1000==0:
-            print(counter)
         counter+=1
         
         # identify genes associated with this go term
