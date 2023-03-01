@@ -107,7 +107,7 @@ def GOEA(target_genes,GENE_SETS,df_key='GO',goterms=None,fdr_thresh=0.25,p_thres
         probs_genes.append(gene_set_in_target)
         
     probs = np.array(probs)    
-    probs_genes = np.array(probs_genes)
+    probs_genes = np.array(probs_genes, dtype=object)
     
     # adjust p value to correct for multiple testing
     fdr_q_probs = probs.size*probs / rankdata(probs,method='ordinal')
